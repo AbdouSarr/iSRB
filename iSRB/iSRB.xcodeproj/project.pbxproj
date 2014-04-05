@@ -22,6 +22,8 @@
 		6A8122B018F0A13E00D4EA81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A81228F18F0A13E00D4EA81 /* UIKit.framework */; };
 		6A8122B818F0A13E00D4EA81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122B618F0A13E00D4EA81 /* InfoPlist.strings */; };
 		6A8122BA18F0A13E00D4EA81 /* iSRBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8122B918F0A13E00D4EA81 /* iSRBTests.m */; };
+		6A8122C518F0A35100D4EA81 /* iPhone(3.5 inch).png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122C318F0A35100D4EA81 /* iPhone(3.5 inch).png */; };
+		6A8122C618F0A35100D4EA81 /* iPhone(4 inch).png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122C418F0A35100D4EA81 /* iPhone(4 inch).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		6A8122B518F0A13E00D4EA81 /* iSRBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSRBTests-Info.plist"; sourceTree = "<group>"; };
 		6A8122B718F0A13E00D4EA81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A8122B918F0A13E00D4EA81 /* iSRBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSRBTests.m; sourceTree = "<group>"; };
+		6A8122C318F0A35100D4EA81 /* iPhone(3.5 inch).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone(3.5 inch).png"; sourceTree = "<group>"; };
+		6A8122C418F0A35100D4EA81 /* iPhone(4 inch).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone(4 inch).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		6A81229218F0A13E00D4EA81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A8122C318F0A35100D4EA81 /* iPhone(3.5 inch).png */,
+				6A8122C418F0A35100D4EA81 /* iPhone(4 inch).png */,
 				6A81229318F0A13E00D4EA81 /* iSRB-Info.plist */,
 				6A81229418F0A13E00D4EA81 /* InfoPlist.strings */,
 				6A81229718F0A13E00D4EA81 /* main.m */,
@@ -234,9 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8122C618F0A35100D4EA81 /* iPhone(4 inch).png in Resources */,
 				6A8122A718F0A13E00D4EA81 /* Images.xcassets in Resources */,
 				6A81229618F0A13E00D4EA81 /* InfoPlist.strings in Resources */,
 				6A81229F18F0A13E00D4EA81 /* Main.storyboard in Resources */,
+				6A8122C518F0A35100D4EA81 /* iPhone(3.5 inch).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
