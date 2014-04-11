@@ -45,6 +45,7 @@
 		6A8122ED18F894E300D4EA81 /* 124-bullhorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122EA18F894E300D4EA81 /* 124-bullhorn.png */; };
 		6A8122EF18F8961500D4EA81 /* Logo-NoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */; };
 		6A8122F118F8A50800D4EA81 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122F018F8A50800D4EA81 /* image.png */; };
+		6A8122F318F8AA5700D4EA81 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122F218F8AA5700D4EA81 /* 7.jpg */; };
 		D2C25C8DC4DE4F7FA0D5F01A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FBD51CBB0749BABF139DB6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		6A8122EA18F894E300D4EA81 /* 124-bullhorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "124-bullhorn.png"; sourceTree = "<group>"; };
 		6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-NoBackground.png"; sourceTree = "<group>"; };
 		6A8122F018F8A50800D4EA81 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		6A8122F218F8AA5700D4EA81 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		C3FBD51CBB0749BABF139DB6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				6A8122C718F1D4AE00D4EA81 /* App Icon [Rounded] */,
+				6A8122F218F8AA5700D4EA81 /* 7.jpg */,
 				6A8122C318F0A35100D4EA81 /* iPhone(3.5 inch).png */,
 				6A8122C418F0A35100D4EA81 /* iPhone(4 inch).png */,
 				6A81229318F0A13E00D4EA81 /* iSRB-Info.plist */,
@@ -344,6 +347,7 @@
 				6A8122E718F1D4AF00D4EA81 /* iTunesArtwork@2x.png in Resources */,
 				6A8122DD18F1D4AF00D4EA81 /* AppIcon50x50@2x.png in Resources */,
 				6A8122C518F0A35100D4EA81 /* iPhone(3.5 inch).png in Resources */,
+				6A8122F318F8AA5700D4EA81 /* 7.jpg in Resources */,
 				6A8122E618F1D4AF00D4EA81 /* iTunesArtwork.png in Resources */,
 				6A8122D818F1D4AF00D4EA81 /* AppIcon29x29.png in Resources */,
 			);
