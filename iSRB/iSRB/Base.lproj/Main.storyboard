@@ -90,7 +90,7 @@
         <!--Second View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="SRBSecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" title="Second" id="QUy-BD-bpt" customClass="SRBSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FgS-U6-xeU"/>
                         <viewControllerLayoutGuide type="bottom" id="stI-4g-hlJ"/>

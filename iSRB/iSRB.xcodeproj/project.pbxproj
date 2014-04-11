@@ -44,6 +44,7 @@
 		6A8122EC18F894E300D4EA81 /* 63-runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122E918F894E300D4EA81 /* 63-runner.png */; };
 		6A8122ED18F894E300D4EA81 /* 124-bullhorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122EA18F894E300D4EA81 /* 124-bullhorn.png */; };
 		6A8122EF18F8961500D4EA81 /* Logo-NoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */; };
+		6A8122F118F8A50800D4EA81 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122F018F8A50800D4EA81 /* image.png */; };
 		D2C25C8DC4DE4F7FA0D5F01A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FBD51CBB0749BABF139DB6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		6A8122E918F894E300D4EA81 /* 63-runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "63-runner.png"; sourceTree = "<group>"; };
 		6A8122EA18F894E300D4EA81 /* 124-bullhorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "124-bullhorn.png"; sourceTree = "<group>"; };
 		6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-NoBackground.png"; sourceTree = "<group>"; };
+		6A8122F018F8A50800D4EA81 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		C3FBD51CBB0749BABF139DB6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 				6A8122E918F894E300D4EA81 /* 63-runner.png */,
 				6A8122EA18F894E300D4EA81 /* 124-bullhorn.png */,
 				6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */,
+				6A8122F018F8A50800D4EA81 /* image.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				6A8122E518F1D4AF00D4EA81 /* AppIcon76x76@2x.png in Resources */,
 				6A8122EF18F8961500D4EA81 /* Logo-NoBackground.png in Resources */,
 				6A8122DE18F1D4AF00D4EA81 /* AppIcon57x57.png in Resources */,
+				6A8122F118F8A50800D4EA81 /* image.png in Resources */,
 				6A8122C618F0A35100D4EA81 /* iPhone(4 inch).png in Resources */,
 				6A8122E418F1D4AF00D4EA81 /* AppIcon76x76.png in Resources */,
 				6A8122A718F0A13E00D4EA81 /* Images.xcassets in Resources */,
