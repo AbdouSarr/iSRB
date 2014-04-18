@@ -16,13 +16,41 @@
     UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
     tabBar.selectedIndex = 1;
     
+    [self changeSlide];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:6.0f
+                                             target:self
+                                           selector:@selector(changeSlide)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     return YES;
 }
-							
+
+-(void)changeSlide {
+    
+    slide++;
+    
+    if(slide > 2)//an array count perhaps
+        slide = 1;
+    //create the string as needed, example only
+    NSString *theName = [NSString stringWithFormat:@"img_%d.png", slide];
+    UIImage *toImage = [UIImage imageNamed:theName];
+    [UIView transitionWithView:self.window
+                      duration:1.75f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        self.window.backgroundColor = [UIColor colorWithPatternImage:toImage];
+                    } completion:NULL];
+    
+}
+
+					
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -44,6 +72,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [timer invalidate];
 }
 
 @end

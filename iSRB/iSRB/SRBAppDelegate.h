@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRBAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SRBAppDelegate : UIResponder <UIApplicationDelegate> {
+    
+    int slide;
+    NSTimer *timer;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

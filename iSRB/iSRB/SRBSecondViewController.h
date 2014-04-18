@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRBSecondViewController : UIViewController
+@interface SRBSecondViewController : UIViewController {
+    IBOutlet UILabel *dayOfWeek;
+    IBOutlet UILabel *monthDayNum;
+    IBOutlet UILabel *currentSchedule;
+    NSString *currentDayOfWeek;
+    NSString *displayCurrentSchedule;
+}
 
 @end
