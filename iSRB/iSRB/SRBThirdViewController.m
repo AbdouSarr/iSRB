@@ -7,9 +7,11 @@
 //
 
 #import "SRBThirdViewController.h"
+#import "STTwitter.h"
+@interface SRBThirdViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@interface SRBThirdViewController ()
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *twitterFeed;
 @end
 
 @implementation SRBThirdViewController
@@ -19,7 +21,61 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
     // Do any additional setup after loading the view.
+    
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
+    STTwitterAPI *twitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"f6hsbN5YvubQj61cLNsjjqsAK" consumerSecret:@"vQI14R3evORdgRzUIPLOPCKdH1PV86TBfDorxsLrDk4qwMFBcU"];
+    
+    [twitter verifyCredentialsWithSuccessBlock:^(NSString *username) {
+        
+        [twitter getUserTimelineWithScreenName:@"srb_athletics" successBlock:^(NSArray *statuses) {
+            
+            self.twitterFeed = [NSMutableArray arrayWithArray:statuses];
+            
+            [self.tableView reloadData];
+            
+        } errorBlock:^(NSError *error) {
+            
+            NSLog(@"%@",error.description);
+            
+        }];
+        
+    } errorBlock:^(NSError *error) {
+        
+        NSLog(@"%@",error.debugDescription);
+        
+    }];
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.twitterFeed.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID =  @"CellID2" ;
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    NSInteger idx = indexPath.row;
+    NSDictionary *t = self.twitterFeed[idx];
+    
+    cell.textLabel.text = t[@"text"];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

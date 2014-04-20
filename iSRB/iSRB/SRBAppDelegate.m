@@ -13,16 +13,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    [NewRelicAgent startWithApplicationToken:@"AA98ccd97a8d2ad3c215f2942085110f4c35e70c1a"];
+    
+    
     UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
     tabBar.selectedIndex = 1;
     
     [self changeSlide];
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:6.0f
-                                             target:self
-                                           selector:@selector(changeSlide)
-                                           userInfo:nil
-                                            repeats:YES];
+    [self slideTimer];
     
     return YES;
 }
@@ -33,16 +33,25 @@
     
     if(slide > 2)//an array count perhaps
         slide = 1;
-    //create the string as needed, example only
+    //create the string as needed
     NSString *theName = [NSString stringWithFormat:@"img_%d.png", slide];
     UIImage *toImage = [UIImage imageNamed:theName];
     [UIView transitionWithView:self.window
-                      duration:1.75f
+                      duration:.75f
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     animations:^{
                         self.window.backgroundColor = [UIColor colorWithPatternImage:toImage];
                     } completion:NULL];
     
+}
+
+-(void)slideTimer {
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:6.0f
+                                             target:self
+                                           selector:@selector(changeSlide)
+                                           userInfo:nil
+                                            repeats:YES];
 }
 
 					
