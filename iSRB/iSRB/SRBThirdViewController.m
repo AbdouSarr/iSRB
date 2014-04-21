@@ -67,6 +67,10 @@
     
     cell.backgroundColor = [UIColor clearColor];
     
+    NSString *dateString = [t valueForKey:@"created_at"]; // "Sun Jun 28 20:33:01 +0000 2009"
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", dateString];
+    
     return cell;
 }
 

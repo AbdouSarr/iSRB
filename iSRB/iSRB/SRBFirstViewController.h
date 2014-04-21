@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRBFirstViewController : UIViewController
+@interface SRBFirstViewController : UIViewController {
+    
+    NSString *twitterDate;
+    
+}
 
 @end

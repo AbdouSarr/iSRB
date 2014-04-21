@@ -59,7 +59,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
     NSInteger idx = indexPath.row;
@@ -68,6 +68,16 @@
     cell.textLabel.text = t[@"text"];
     
     cell.backgroundColor = [UIColor clearColor];
+    
+    
+    NSString *dateString = [t valueForKey:@"created_at"]; // "Sun Jun 28 20:33:01 +0000 2009"
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"EEE MMM dd HH:mm:ssz yyyy"];
+    NSDate *date = [dateFormat dateFromString:dateString];
+    // Convert date object to desired output format
+    [dateFormat setDateFormat:@"cccc MMMM dd"];
+    dateString = [dateFormat stringFromDate:date];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", dateString];
     
     return cell;
 }
