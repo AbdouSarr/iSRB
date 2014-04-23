@@ -31,17 +31,18 @@
     
     slide++;
     
-    if(slide > 2)//an array count perhaps
+    if(slide > 10)//an array count perhaps
         slide = 1;
     //create the string as needed
     NSString *theName = [NSString stringWithFormat:@"img_%d.png", slide];
     UIImage *toImage = [UIImage imageNamed:theName];
     [UIView transitionWithView:self.window
-                      duration:.75f
+                      duration:.5f
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     animations:^{
                         self.window.backgroundColor = [UIColor colorWithPatternImage:toImage];
                     } completion:NULL];
+    
     
 }
 
