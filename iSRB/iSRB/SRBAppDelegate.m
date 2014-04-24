@@ -17,12 +17,13 @@
     
     [NewRelicAgent startWithApplicationToken:@"AA98ccd97a8d2ad3c215f2942085110f4c35e70c1a"];
     
+   
     
-    UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
-    tabBar.selectedIndex = 1;
+    [self checkScreen];
     
     [self changeSlide];
     [self slideTimer];
+    
     
     return YES;
 }
@@ -31,7 +32,7 @@
     
     slide++;
     
-    if(slide > 9)//an array count perhaps
+    if(slide > 8)//an array count perhaps
         slide = 1;
     //create the string as needed
     NSString *theName = [NSString stringWithFormat:@"img_%d.png", slide];
@@ -55,7 +56,31 @@
                                             repeats:YES];
 }
 
-					
+-(void) checkScreen {
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            NSLog(@"Bad iPhone");
+            UIStoryboard *iPhone4Storyboard = [UIStoryboard storyboardWithName:@"iPhone4Storyboard" bundle:nil];
+            UIViewController *vc = [iPhone4Storyboard instantiateViewControllerWithIdentifier:@"sevenyolo"];
+            self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+            self.window.rootViewController = vc;
+            [self.window makeKeyAndVisible];
+            UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+            tabBar.selectedIndex = 1;
+        }
+        if(result.height == 568)
+        {
+            NSLog(@"Good iPhone");
+            UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+            tabBar.selectedIndex = 1;
+        }
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

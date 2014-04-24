@@ -79,6 +79,8 @@
     dateString = [dateFormat stringFromDate:date];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", dateString];
     
+    
+    
     return cell;
 }
 
