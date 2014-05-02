@@ -7,6 +7,7 @@
 //
 
 #import "SRBAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation SRBAppDelegate
 
@@ -14,10 +15,10 @@
 {
     // Override point for customization after application launch.
     
+    [Parse setApplicationId:@"tAx1id9LSTpI14ahZsNmYbXlW7iahNlvZvdpJlvy"
+                  clientKey:@"SBglBUfsgA1m07mSn9cz27dzWoYl8mr130URHSua"];
     
-    [NewRelicAgent startWithApplicationToken:@"AA98ccd97a8d2ad3c215f2942085110f4c35e70c1a"];
-    
-   
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     [self checkScreen];
     

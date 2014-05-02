@@ -32,10 +32,6 @@
 		6A5729CD190745CE00398C71 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5729BD190745CE00398C71 /* iTunesArtwork.png */; };
 		6A5729CE190745CE00398C71 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5729BE190745CE00398C71 /* iTunesArtwork@2x.png */; };
 		6A5729D219074E8400398C71 /* iPhone4Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5729D119074E8400398C71 /* iPhone4Storyboard.storyboard */; };
-		6A648A0B19046CB800B4576F /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A648A0A19046CB800B4576F /* NewRelicAgent.framework */; };
-		6A648A0D19046CCB00B4576F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A648A0C19046CCB00B4576F /* CoreTelephony.framework */; };
-		6A648A0F19046CFB00B4576F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A648A0E19046CFB00B4576F /* SystemConfiguration.framework */; };
-		6A648A1119046D0C00B4576F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A648A1019046D0C00B4576F /* libz.dylib */; };
 		6A81228C18F0A13E00D4EA81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A81228B18F0A13D00D4EA81 /* Foundation.framework */; };
 		6A81228E18F0A13E00D4EA81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A81228D18F0A13E00D4EA81 /* CoreGraphics.framework */; };
 		6A81229018F0A13E00D4EA81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A81228F18F0A13E00D4EA81 /* UIKit.framework */; };
@@ -59,6 +55,22 @@
 		6A8122EF18F8961500D4EA81 /* Logo-NoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122EE18F8961500D4EA81 /* Logo-NoBackground.png */; };
 		6A8122F118F8A50800D4EA81 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8122F018F8A50800D4EA81 /* image.png */; };
 		6A8122F618F9E36200D4EA81 /* SRBThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8122F518F9E36200D4EA81 /* SRBThirdViewController.m */; };
+		6A9797B81911A6E100BB4B8F /* SRBInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9797B71911A6E100BB4B8F /* SRBInfoViewController.m */; };
+		6A9797BB1911B53400BB4B8F /* PushNoAnimTrans.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9797BA1911B53400BB4B8F /* PushNoAnimTrans.m */; };
+		6A9797BE1911EE8D00BB4B8F /* PushAnimTrans.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9797BD1911EE8D00BB4B8F /* PushAnimTrans.m */; };
+		6A9797C41913040C00BB4B8F /* App Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9797C31913040C00BB4B8F /* App Info.png */; };
+		6A9797C81913179800BB4B8F /* Important.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9797C71913179800BB4B8F /* Important.png */; };
+		6A9797CE191327E500BB4B8F /* StudResc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9797CD191327E500BB4B8F /* StudResc.png */; };
+		6A9797D019133BA400BB4B8F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797CF19133BA400BB4B8F /* Parse.framework */; };
+		6A9797D219133BDD00BB4B8F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797D119133BDD00BB4B8F /* AudioToolbox.framework */; };
+		6A9797D419133BF800BB4B8F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797D319133BF800BB4B8F /* CFNetwork.framework */; };
+		6A9797D619133C0300BB4B8F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797D519133C0300BB4B8F /* CoreLocation.framework */; };
+		6A9797D819133C1100BB4B8F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797D719133C1100BB4B8F /* libz.dylib */; };
+		6A9797DA19133C1B00BB4B8F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797D919133C1B00BB4B8F /* MobileCoreServices.framework */; };
+		6A9797DC19133C4E00BB4B8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797DB19133C4E00BB4B8F /* Security.framework */; };
+		6A9797E019133C5E00BB4B8F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797DF19133C5E00BB4B8F /* SystemConfiguration.framework */; };
+		6A9797E119133E7A00BB4B8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD301B318FB435200B2C89D /* QuartzCore.framework */; };
+		6A9797E51913C03C00BB4B8F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9797E41913C03C00BB4B8F /* FacebookSDK.framework */; };
 		6AE4F3581901FB78000C074E /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4F33C1901FB78000C074E /* NSDateFormatter+STTwitter.m */; };
 		6AE4F3591901FB78000C074E /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4F33E1901FB78000C074E /* NSError+STTwitter.m */; };
 		6AE4F35A1901FB78000C074E /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4F3401901FB78000C074E /* NSString+STTwitter.m */; };
@@ -115,10 +127,6 @@
 		6A5729BD190745CE00398C71 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		6A5729BE190745CE00398C71 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		6A5729D119074E8400398C71 /* iPhone4Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4Storyboard.storyboard; sourceTree = "<group>"; };
-		6A648A0A19046CB800B4576F /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewRelicAgent.framework; sourceTree = "<group>"; };
-		6A648A0C19046CCB00B4576F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		6A648A0E19046CFB00B4576F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6A648A1019046D0C00B4576F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6A81228818F0A13D00D4EA81 /* iSRB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSRB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A81228B18F0A13D00D4EA81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A81228D18F0A13E00D4EA81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +157,24 @@
 		6A8122F018F8A50800D4EA81 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		6A8122F418F9E36200D4EA81 /* SRBThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBThirdViewController.h; sourceTree = "<group>"; };
 		6A8122F518F9E36200D4EA81 /* SRBThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBThirdViewController.m; sourceTree = "<group>"; };
+		6A9797B61911A6E100BB4B8F /* SRBInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBInfoViewController.h; sourceTree = "<group>"; };
+		6A9797B71911A6E100BB4B8F /* SRBInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBInfoViewController.m; sourceTree = "<group>"; };
+		6A9797B91911B53400BB4B8F /* PushNoAnimTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNoAnimTrans.h; sourceTree = "<group>"; };
+		6A9797BA1911B53400BB4B8F /* PushNoAnimTrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNoAnimTrans.m; sourceTree = "<group>"; };
+		6A9797BC1911EE8D00BB4B8F /* PushAnimTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimTrans.h; sourceTree = "<group>"; };
+		6A9797BD1911EE8D00BB4B8F /* PushAnimTrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimTrans.m; sourceTree = "<group>"; };
+		6A9797C31913040C00BB4B8F /* App Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Info.png"; sourceTree = "<group>"; };
+		6A9797C71913179800BB4B8F /* Important.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Important.png; sourceTree = "<group>"; };
+		6A9797CD191327E500BB4B8F /* StudResc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StudResc.png; sourceTree = "<group>"; };
+		6A9797CF19133BA400BB4B8F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		6A9797D119133BDD00BB4B8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6A9797D319133BF800BB4B8F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6A9797D519133C0300BB4B8F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6A9797D719133C1100BB4B8F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6A9797D919133C1B00BB4B8F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6A9797DB19133C4E00BB4B8F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6A9797DF19133C5E00BB4B8F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6A9797E41913C03C00BB4B8F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		6AD301B318FB435200B2C89D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6AE4F33B1901FB78000C074E /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
 		6AE4F33C1901FB78000C074E /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
@@ -189,16 +215,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A648A1119046D0C00B4576F /* libz.dylib in Frameworks */,
-				6A648A0F19046CFB00B4576F /* SystemConfiguration.framework in Frameworks */,
-				6A648A0D19046CCB00B4576F /* CoreTelephony.framework in Frameworks */,
+				6A9797E51913C03C00BB4B8F /* FacebookSDK.framework in Frameworks */,
+				6A9797E119133E7A00BB4B8F /* QuartzCore.framework in Frameworks */,
+				6A9797E019133C5E00BB4B8F /* SystemConfiguration.framework in Frameworks */,
+				6A9797DC19133C4E00BB4B8F /* Security.framework in Frameworks */,
+				6A9797DA19133C1B00BB4B8F /* MobileCoreServices.framework in Frameworks */,
+				6A9797D619133C0300BB4B8F /* CoreLocation.framework in Frameworks */,
+				6A9797D419133BF800BB4B8F /* CFNetwork.framework in Frameworks */,
+				6A9797D219133BDD00BB4B8F /* AudioToolbox.framework in Frameworks */,
 				6AE4F36A1901FBE4000C074E /* Social.framework in Frameworks */,
 				6AE4F3681901FBDD000C074E /* Twitter.framework in Frameworks */,
 				6AE4F3661901FBD5000C074E /* Accounts.framework in Frameworks */,
-				6A648A0B19046CB800B4576F /* NewRelicAgent.framework in Frameworks */,
 				6A81228E18F0A13E00D4EA81 /* CoreGraphics.framework in Frameworks */,
 				6A81229018F0A13E00D4EA81 /* UIKit.framework in Frameworks */,
 				6A81228C18F0A13E00D4EA81 /* Foundation.framework in Frameworks */,
+				6A9797D019133BA400BB4B8F /* Parse.framework in Frameworks */,
+				6A9797D819133C1100BB4B8F /* libz.dylib in Frameworks */,
 				D2C25C8DC4DE4F7FA0D5F01A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +294,15 @@
 		6A81228A18F0A13D00D4EA81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A648A1019046D0C00B4576F /* libz.dylib */,
-				6A648A0E19046CFB00B4576F /* SystemConfiguration.framework */,
-				6A648A0C19046CCB00B4576F /* CoreTelephony.framework */,
-				6A648A0A19046CB800B4576F /* NewRelicAgent.framework */,
+				6A9797E41913C03C00BB4B8F /* FacebookSDK.framework */,
+				6A9797DF19133C5E00BB4B8F /* SystemConfiguration.framework */,
+				6A9797DB19133C4E00BB4B8F /* Security.framework */,
+				6A9797D919133C1B00BB4B8F /* MobileCoreServices.framework */,
+				6A9797D719133C1100BB4B8F /* libz.dylib */,
+				6A9797D519133C0300BB4B8F /* CoreLocation.framework */,
+				6A9797D319133BF800BB4B8F /* CFNetwork.framework */,
+				6A9797D119133BDD00BB4B8F /* AudioToolbox.framework */,
+				6A9797CF19133BA400BB4B8F /* Parse.framework */,
 				6AE4F3691901FBE4000C074E /* Social.framework */,
 				6AE4F3671901FBDD000C074E /* Twitter.framework */,
 				6AE4F3651901FBD5000C074E /* Accounts.framework */,
@@ -292,6 +329,12 @@
 				6A8122A418F0A13E00D4EA81 /* SRBSecondViewController.m */,
 				6A8122F418F9E36200D4EA81 /* SRBThirdViewController.h */,
 				6A8122F518F9E36200D4EA81 /* SRBThirdViewController.m */,
+				6A9797B61911A6E100BB4B8F /* SRBInfoViewController.h */,
+				6A9797B71911A6E100BB4B8F /* SRBInfoViewController.m */,
+				6A9797B91911B53400BB4B8F /* PushNoAnimTrans.h */,
+				6A9797BA1911B53400BB4B8F /* PushNoAnimTrans.m */,
+				6A9797BC1911EE8D00BB4B8F /* PushAnimTrans.h */,
+				6A9797BD1911EE8D00BB4B8F /* PushAnimTrans.m */,
 				6A8122A618F0A13E00D4EA81 /* Images.xcassets */,
 				6A81229218F0A13E00D4EA81 /* Supporting Files */,
 			);
@@ -301,6 +344,9 @@
 		6A81229218F0A13E00D4EA81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A9797CD191327E500BB4B8F /* StudResc.png */,
+				6A9797C71913179800BB4B8F /* Important.png */,
+				6A9797C31913040C00BB4B8F /* App Info.png */,
 				6A5729AE190745CE00398C71 /* App Icon [Squared] */,
 				6A57299C1907445200398C71 /* img_1.png */,
 				6A57299D1907445200398C71 /* img_2.png */,
@@ -440,6 +486,11 @@
 				TargetAttributes = {
 					6A81228718F0A13D00D4EA81 = {
 						DevelopmentTeam = 3HZSCR5QB4;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					6A8122AB18F0A13E00D4EA81 = {
 						TestTargetID = 6A81228718F0A13D00D4EA81;
@@ -470,6 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9797CE191327E500BB4B8F /* StudResc.png in Resources */,
 				6A8122EC18F894E300D4EA81 /* 63-runner.png in Resources */,
 				6A5729CD190745CE00398C71 /* iTunesArtwork.png in Resources */,
 				6A8122EF18F8961500D4EA81 /* Logo-NoBackground.png in Resources */,
@@ -484,12 +536,14 @@
 				6A81229618F0A13E00D4EA81 /* InfoPlist.strings in Resources */,
 				6A5729A71907445200398C71 /* img_3@2x.png in Resources */,
 				6A81229F18F0A13E00D4EA81 /* Main.storyboard in Resources */,
+				6A9797C81913179800BB4B8F /* Important.png in Resources */,
 				6A5729AB1907445200398C71 /* img_6@2x.png in Resources */,
 				6A8122ED18F894E300D4EA81 /* 124-bullhorn.png in Resources */,
 				6A5729A81907445200398C71 /* img_4@2x.png in Resources */,
 				6A5729A51907445200398C71 /* img_1.png in Resources */,
 				6A5729C9190745CE00398C71 /* AppIcon72x72.png in Resources */,
 				6A5729C6190745CE00398C71 /* AppIcon57x57@2x.png in Resources */,
+				6A9797C41913040C00BB4B8F /* App Info.png in Resources */,
 				6A5729D219074E8400398C71 /* iPhone4Storyboard.storyboard in Resources */,
 				6A5729C8190745CE00398C71 /* AppIcon60x60@2x.png in Resources */,
 				6A5729A61907445200398C71 /* img_2.png in Resources */,
@@ -558,10 +612,12 @@
 			files = (
 				6A8122A218F0A13E00D4EA81 /* SRBFirstViewController.m in Sources */,
 				6A81229C18F0A13E00D4EA81 /* SRBAppDelegate.m in Sources */,
+				6A9797BE1911EE8D00BB4B8F /* PushAnimTrans.m in Sources */,
 				6AE4F3581901FB78000C074E /* NSDateFormatter+STTwitter.m in Sources */,
 				6AE4F35C1901FB78000C074E /* STTwitterAPI.m in Sources */,
 				6AE4F3621901FB78000C074E /* BAVPlistNode.m in Sources */,
 				6AE4F3591901FB78000C074E /* NSError+STTwitter.m in Sources */,
+				6A9797BB1911B53400BB4B8F /* PushNoAnimTrans.m in Sources */,
 				6AE4F35D1901FB78000C074E /* STTwitterAppOnly.m in Sources */,
 				6AE4F3601901FB78000C074E /* STTwitterOS.m in Sources */,
 				6AE4F3611901FB78000C074E /* STTwitterOSRequest.m in Sources */,
@@ -569,6 +625,7 @@
 				6AE4F35B1901FB78000C074E /* STHTTPRequest+STTwitter.m in Sources */,
 				6A8122F618F9E36200D4EA81 /* SRBThirdViewController.m in Sources */,
 				6AE4F3641901FB78000C074E /* STHTTPRequest.m in Sources */,
+				6A9797B81911A6E100BB4B8F /* SRBInfoViewController.m in Sources */,
 				6AE4F35E1901FB78000C074E /* STTwitterHTML.m in Sources */,
 				6AE4F35F1901FB78000C074E /* STTwitterOAuth.m in Sources */,
 				6AE4F3631901FB78000C074E /* JSONSyntaxHighlight.m in Sources */,
