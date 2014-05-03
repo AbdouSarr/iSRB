@@ -15,10 +15,16 @@
 {
     // Override point for customization after application launch.
     
-    [Parse setApplicationId:@"tAx1id9LSTpI14ahZsNmYbXlW7iahNlvZvdpJlvy"
-                  clientKey:@"SBglBUfsgA1m07mSn9cz27dzWoYl8mr130URHSua"];
+    [Parse setApplicationId:@"T9Sf5EUAUDEFIi1KyP9ZpIhbKwzOqoMC2tRlvpSD"
+                  clientKey:@"lhbD8K9iY5PBLuskcwmdSS0mnI5lH04qTEko5tux"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // Register for push notifications
+    [application registerForRemoteNotificationTypes:
+     UIRemoteNotificationTypeBadge |
+     UIRemoteNotificationTypeAlert |
+     UIRemoteNotificationTypeSound];
     
     [self checkScreen];
     
@@ -28,6 +34,21 @@
     
     return YES;
 }
+
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:newDeviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
 
 -(void)changeSlide {
     
